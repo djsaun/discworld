@@ -20,7 +20,7 @@
 			<label>Filter:</label>
 			<input type="text" ng-model="search.title" placeholder="Title">
 			<label>Storyline: </label>
-			<select ng-model="discworld.story" ng-options="value.story for value in discworld | unique: 'story' | orderBy: 'story'">
+			<select ng-model="storyFilter" ng-options="value.story for value in discworld | unique: 'story' | orderBy: 'story'">
 				<option value="">All</option>
 			</select> 			
 	</div>
@@ -28,7 +28,7 @@
 
 <div>
     <div>
-        <ul ng-repeat="book in discworld | filter:search">
+        <ul ng-repeat="book in discworld | filter:search | filter: storyFilter" ng-show="book.story">
         	<div class="row">
         		<div class="col-md-3">
 	        		<img src="{{book.image}}" alt="{{book.alt}}">
