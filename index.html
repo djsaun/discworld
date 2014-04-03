@@ -28,7 +28,7 @@
 
 <div>
     <div>
-        <ul ng-repeat="book in discworld | filter:search | filter: storyFilter" ng-show="book.story">
+        <ul ng-repeat="book in discworld | filter:search | filter: storyFilter.story:true">
         	<div class="row">
         		<div class="col-md-3">
 	        		<img src="{{book.image}}" alt="{{book.alt}}">
