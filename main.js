@@ -1,4 +1,4 @@
-var app = angular.module("discworldApp", []);
+var app = angular.module("discworldApp", ['ui']);
 
 app.factory('Discworld', function() {
 	var Discworld = {};
@@ -331,4 +331,18 @@ return Discworld;
 
 function DiscworldCtrl($scope, Discworld) {
 	$scope.discworld = Discworld;
+	$scope.init = function() {
+		angular.forEach(discworld.story, function(story, index) {
+			var exists = false;
+			angular.forEach($scope.availableStory, function(avStory, index) {
+				if (avStory == story) {
+					exists = true;
+				}
+			});
+			if (avStory === false) {
+				$scope.availableStory.push(story);
+			}
+		});
+	}
 }
+

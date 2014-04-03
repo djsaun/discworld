@@ -18,9 +18,9 @@
 	<div class="container main-frame" ng-app="discworldApp" ng-controller="DiscworldCtrl" ng-init="init()">
 		<div id="filter" class="search-box row-fluid form-inline">
 			<label>Filter:</label>
-			<input type="text" ng-model="search" placeholder="Title, Year, Storyline">
-			<label>Storyline:</label>
-			<select ng-model="discworld.story" ng-options="s.story for s in discworld">
+			<input type="text" ng-model="search.title" placeholder="Title">
+			<label>Storyline: </label>
+			<select ng-model="discworld.story" ng-options="value.story for value in discworld | unique: 'story' | orderBy: 'story'">
 				<option value="">All</option>
 			</select> 			
 	</div>
@@ -49,7 +49,10 @@
 	
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="jquery-1.10.2.js"></script>
 <script type="text/javascript" src="bootstrap.min.js"></script>
 <script type="text/javascript" src="angular.min.js"></script>
+<script type="text/javascript" src="ui-utils.min.js"></script>
+<script src="angular-ui.js"></script>
 <script type="text/javascript" src="main.js"></script>
 </html>
