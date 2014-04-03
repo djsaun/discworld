@@ -1,0 +1,30 @@
+body {
+	margin: 0 auto;
+}
+
+div#filter {
+	margin-bottom: 2em;
+}
+
+li {
+	list-style-type: none;
+}
+
+li:nth-child(1) {
+	font-size: 1.3em;
+}
+
+img {
+	width: 176px;
+	height: 300px;
+}
+
+div#main > li:first-child {
+	margin-bottom: 10px;
+	font-size: 1.6em;
+	font-style: italic;
+	}
+
+div#main > li:nth-child(2) {
+	font-size: .8em;
+	}

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Discworld Web App</title>
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="banner">
+	<div class="container">
+			<h1>Discworld Tracker</h1>
+	</div>
+</div>
+	<div class="container main-frame" ng-app="discworldApp" ng-controller="DiscworldCtrl" ng-init="init()">
+		<div id="filter" class="search-box row-fluid form-inline">
+			<label>Filter:</label>
+			<input type="text" ng-model="search" placeholder="Title, Year, Storyline">
+			<label>Storyline:</label>
+			<select ng-model="discworld.story" ng-options="s.story for s in discworld">
+				<option value="">All</option>
+			</select> 			
+	</div>
+
+
+<div>
+    <div>
+        <ul ng-repeat="book in discworld | filter:search">
+        	<div class="row">
+        		<div class="col-md-3">
+	        		<img src="{{book.image}}" alt="{{book.alt}}">
+	        	</div>
+	        	<div id="main" class="col-md-5">
+		            <li>{{book.title}}</li>
+		            <li>{{book.description}}</li>
+		        </div>
+		        <div class="col-md-4">
+		            <li>{{book.year}}</li>
+		            <li>{{book.story}}</li>
+	        	</div>
+        	</div>
+        </ul>
+    </div>
+  </div>
+</div>
+	
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="bootstrap.min.js"></script>
+<script type="text/javascript" src="angular.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+</html>

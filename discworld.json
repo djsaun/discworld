@@ -1,0 +1,203 @@
+var Discworld = {};
+Discworld.book=[
+{
+	title: "The Colour of Magic",
+	year: 1983,
+	story: "Rincewind", 
+},
+{
+	title: "The Light Fantastic",
+	year: 1986,
+	story: "Rincewind"
+},
+{
+	title: "Equal Rites",
+	year: 1987,
+	story: "The Witches"
+},
+{
+	title: "Mort",
+	year: 1987,
+	story: "Death"
+},
+{
+	title: "Sourcery",
+	year: 1988,
+	story: "Rincewind"
+},
+{
+	title: "Wyrd Sisters",
+	year: 1988,
+	story: "The Witches"
+},
+{
+	title: "Pyramids",
+	year: 1989,
+	story: "Ancient Civilizations"
+},
+{
+	title: "Guards! Guards!",
+	year: 1989,
+	story: "The City Watch"
+},
+{
+	title: "Eric",
+	year: 1990,
+	story: "Rincewind"
+},
+{
+	title: "Moving Pictures",
+	year: 1990,
+	story: "The Wizards"
+},
+{
+	title: "Reaper Man",
+	year: 1991, 
+	story: "Death"
+},
+{
+	title: "Witches Abroad",
+	year: 1991
+	story: "The Witches"
+},
+{
+	title: "Small Gods",
+	year: 1992,
+	story: "Ancient Civilizations"
+},
+{
+	title: "Lords and Ladies",
+	year: 1992,
+	story: "The Witches"
+},
+{
+	title: "Men at Arms",
+	year: 1993,
+	story: "The City Watch"
+},
+{
+	title: "Soul Music",
+	year:  1994,
+	story: "Death"
+},
+{
+	title: "Interesting Times",
+	year: 1994,
+	story: "Rincewind"
+},
+{
+	title: "Maskerade",
+	year: 1995,
+	story: "The Witches"
+},
+{
+	title: "Feet of Clay",
+	year: 1996,
+	story: "The City Watch"
+},
+{
+	title: "Hogfather",
+	year: 1996,
+	story: "Death"
+},
+{
+	title: "Jingo",
+	year: 1997,
+	story: "The City Watch"
+},
+{
+	title: "The Last Continent",
+	year: 1998,
+	story: "Rincewind"
+},
+{
+	title: "Carpe Jugulum",
+	year: 1998,
+	story: "Rincewind"
+},
+{
+	title: "The Fifth Elephant",
+	year: 1999,
+	story: "The City Watch"
+},
+{
+	title: "The Truth",
+	year: 2000,
+	story: "The City Watch"
+},
+{
+	title: "Thief of Time",
+	year: 2001,
+	story: "Death"
+},
+{
+	title: "The Last Hero",
+	year: 2001, 
+	story: "Rincewind"
+},
+{
+	title: "The Amazing Maurice and his Educated Rodents",
+	year: 2001,
+	story: "Miscellaneous"
+},
+{
+	title: "Night Watch",
+	year: 2002,
+	story: "The City Watch"
+},
+{
+	title: "The Wee Free Men",
+	year: 2003,
+	story: "The Witches"
+},
+{
+	title: "Monstrous Regiment",
+	year: 2003,
+	story: "Industrial Revolution"
+},
+{
+	title: "A Hat Full of Sky",
+	year: 2004,
+	story: "The Witches"
+},
+{
+	title: "Going Postal",
+	year: 2004, 
+	story: "Industrial Revolution"
+},
+{
+	title: "Thud!",
+	year: 2005, 
+	story: "The City Watch"
+},
+{
+	title: "Wintersmith",
+	year: 2006,
+	story: "The Witches"
+},
+{
+	title: "Making Money",
+	year: 2007,
+	story: "Industrial Revolution"
+},
+{
+	title: "Unseen Academicals",
+	year: 2009,
+	story: "Rincewind"
+},
+{
+	title: "I Shall Wear Midnight",
+	year: 2010,
+	story: "The Witches"
+},
+{
+	title: "Snuff",
+	year: 2011, 
+	story: "The City Watch"
+},
+{
+	title: "Raising Steam",
+	year: 2013,
+	story: "The City Watch"
+},
+]
