@@ -31,7 +31,7 @@ app.factory('Discworld', function() {
 	image: "img/mort.jpg",
 	alt: "Mort",
 	title: "Mort",
-	description: "In this Discworld installment, Death comes to Mort with an offer he can't refuse -- especially since being, well, dead isn't compulsory.As Death's apprentice, he'll have free board and lodging, use of the company horse, and he won't need time off for family funerals. The position is everything Mort thought he'd ever wanted, until he discovers that this perfect job can be a killer on his love life.",
+	description: "In this Discworld installment, Death comes to Mort with an offer he can't refuse -- especially since being, well, dead isn't compulsory. As Death's apprentice, he'll have free board and lodging, use of the company horse, and he won't need time off for family funerals. The position is everything Mort thought he'd ever wanted, until he discovers that this perfect job can be a killer on his love life.",
 	year: 1987,
 	story: "Death"
 },
@@ -331,6 +331,7 @@ return Discworld;
 
 function DiscworldCtrl($scope, Discworld) {
 	$scope.discworld = Discworld;
+	$scope.orderReverse = year;
 }
 
 

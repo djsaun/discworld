@@ -20,15 +20,20 @@
 			<label>Filter:</label>
 			<input type="text" ng-model="search.title" placeholder="Title">
 			<label>Storyline: </label>
-			<select ng-model="storyFilter" ng-options="value.story for value in discworld | unique: 'story' | orderBy: 'story'">
+			<select ng-model="storyFilter" ng-options="value.story for value in discworld | unique: 'story' | orderBy: 'story'" class="input-medium">
 				<option value="">All</option>
-			</select> 			
+			</select> 	
+			<label>Sort by:</label>	
+			<select ng-model="orderReverse" class="input-medium">
+				<option value="">Oldest</option>	
+				<option value="-year">Most Recent</option>
+			</select>
 	</div>
 
 
 <div>
     <div>
-        <ul ng-repeat="book in discworld | filter:search | filter: storyFilter.story:true">
+        <ul ng-repeat="book in discworld | filter:search | filter: storyFilter.story:true | orderBy: orderReverse">
         	<div class="row">
         		<div class="col-md-3">
 	        		<img src="{{book.image}}" alt="{{book.alt}}">
